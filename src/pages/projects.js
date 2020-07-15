@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout.js"
 
-export default function Home() {
-  return ( 
+export default function Project() {
+  return  (
     <Layout>
-      <h1>kndwin</h1>
-      <p>beep boop</p>
+      <h1>project</h1>
+      <p>Card layout</p>
     </Layout>
   )
 }
