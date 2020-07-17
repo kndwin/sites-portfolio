@@ -1,3 +1,16 @@
+$color-dark: #282828;
+$color-light: #fbf1c7;
+
+html {
+  background: $color-dark;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
 .centerRow {
   display: flex;
   flex-direction: row;
@@ -5,10 +18,13 @@
 }
 
 .links {
-  color: #282828;
+  color: $color-light;
   margin: 10px 10px;
+  text-decoration: none;
 }
 
-.AppBar {
-  margin: 20px auto;
+.nav {
+  font-family: 'Source Sans Pro';
+  font-size: 24pt;
+  font-weight: 700;
 }
