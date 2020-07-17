@@ -9,16 +9,14 @@ import styles from "./layout.module.scss"
 export default function Layout ({ children }) {
   return  (
     <div className={styles.container}>
-      <nav className={styles.nav}>
-        <Link className={styles.links} to="/">
-          kndwin
-        </Link>
-        <Link className={styles.links} to="/projects/">
-          project
-        </Link>
-        <Link className={styles.links} to="/blog/">
-          blog
-        </Link>
+      <nav className={styles.nav_wrapper}>
+        <img className={styles.image}
+          src={'../../images/pages/kndwin.png'} /> 
+        <div className={styles.links_wrapper}>
+          <Link className={styles.link} to="/">kndwin</Link>
+          <Link className={styles.link} to="/projects/">project</Link>
+          <Link className={styles.link} to="/blog/">blog</Link>
+        </div>
       </nav>
       {children}
       <footer>

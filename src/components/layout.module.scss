@@ -9,22 +9,16 @@ html {
   display: flex;
   margin: auto;
   flex-direction: column;
-  width: 650px;
+  width: 850px;
 }
 
-.centerRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.links {
+.link {
   color: $color-light;
   margin: 4px 0;
   text-decoration: none;
 }
 
-.nav {
+.links_wrapper {
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro';
@@ -32,5 +26,15 @@ html {
   font-weight: 700;
   padding: 10px 0;
   margin: 30px 0 10px 0;
+  position: absolute;
+  top: 10px;
+}
+
+.nav_wrapper {
+}
+
+.image {
+  width: 100%;
+  height: 100%;
 }
 
