@@ -7,8 +7,9 @@ html {
 
 .container {
   display: flex;
+  margin: auto;
   flex-direction: column;
-  max-width: 1000px;
+  width: 650px;
 }
 
 .centerRow {
@@ -19,12 +20,17 @@ html {
 
 .links {
   color: $color-light;
-  margin: 10px 10px;
+  margin: 4px 0;
   text-decoration: none;
 }
 
 .nav {
+  display: flex;
+  flex-direction: column;
   font-family: 'Source Sans Pro';
   font-size: 24pt;
   font-weight: 700;
+  padding: 10px 0;
+  margin: 30px 0 10px 0;
 }
+
