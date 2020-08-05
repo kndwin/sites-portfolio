@@ -3,13 +3,17 @@ $color-light: #fbf1c7;
 
 html {
   background: $color-dark;
+  color: $color-light;
+  font-family: 'Source Sans Pro';
 }
 
 .container {
   display: flex;
   margin: auto;
   flex-direction: column;
-  width: 850px;
+  max-width: 850px;
+  min-height: 100vh;
+  font-size: 18pt;
 }
 
 .link {
@@ -21,7 +25,6 @@ html {
 .links_wrapper {
   display: flex;
   flex-direction: column;
-  font-family: 'Source Sans Pro';
   font-size: 24pt;
   font-weight: 700;
   padding: 10px 0;
@@ -38,3 +41,19 @@ html {
   height: 100%;
 }
 
+.icon {
+  padding: 0 10px;
+}
+
+.body {
+  flex-grow: 1;
+}
+
+.footer {
+  margin: 5px 5px;
+  padding: 5px 5px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
