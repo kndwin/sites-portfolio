@@ -11,8 +11,6 @@ export default function Layout ({ children }) {
     <>
       <div className={styles.container}>
         <nav className={styles.nav_wrapper}>
-          <img className={styles.image}
-            src={'../../images/pages/kndwin.png'} /> 
           <div className={styles.links_wrapper}>
             <Link className={styles.link} to="/">
               kndwin
@@ -29,12 +27,21 @@ export default function Layout ({ children }) {
           {children}
         </body>
         <footer className={styles.footer}>
-          <TwitterIcon fontSize='large' 
-            className={styles.icon}/> 
-          <GitHubIcon fontSize='large'
-            className={styles.icon}/> 
-          <EmailIcon fontSize='large'
-            className={styles.icon}/> 
+          <a className={styles.icon_links} 
+            href="https://twitter.com/kndwindev">
+            <TwitterIcon fontSize='large' 
+              className={`${styles.icon} + ${styles.blue}`}/> 
+          </a>
+          <a className={styles.icon_links} 
+            href="https://github.com/kndwin">
+            <GitHubIcon fontSize='large'
+              className={`${styles.icon} + ${styles.grey}`}/> 
+          </a>
+          <a className={styles.icon_links} 
+            href="mailto:me@kndwin.dev?subject=kndwindev">
+            <EmailIcon fontSize='large'
+              className={`${styles.icon} + ${styles.red}`}/> 
+          </a>
         </footer>
       </div>
     </>
