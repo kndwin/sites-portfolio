@@ -34,13 +34,13 @@ export default function ProjectLinks (props) {
           className={styles.link}>
           source code
         </a>
-        ) &nbsp;
+        )
+      </span>
       {props.tags.map((tag) => 
         <span className={`${tagClass(tag)} ${styles.tag}`}>
           {tag}
         </span>
       )}
-      </span>
     </div>
   )
 }
