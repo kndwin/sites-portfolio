@@ -1,8 +1,13 @@
 $color-dark: #282828;
 $color-light: #fbf1c7;
-$color-blue: #458588;
-$color-green: #98971a;
-$color-purple: #b16286;
+$color-blue: #83a598;
+$color-darkblue: #458588;
+$color-green: #b8bb26;
+$color-darkgreen: #98971a;
+$color-purple: #d3869b;
+$color-darkpurple: #b16286;
+$color-grey: #928374;
+$color-darkgrey: #665c54;
 
 .link {
   text-decoration: none;
@@ -13,9 +18,32 @@ $color-purple: #b16286;
   text-decoration: underline;
 }
 
+
+.name {
+  font-weight: 700;
+}
+
+.logo {
+  height: 20px;
+  margin-left: 3px;
+}
+
+.tag_group {
+  display: flex;
+  flex-direction: row;
+  margin: 5px auto;
+}
+
+.tag_link {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 .tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 2px 10px;
-  margin-left: 10px ;
   border-radius: 10px;
   font-size: 12pt;
   font-weight: 600;
@@ -32,4 +60,56 @@ $color-purple: #b16286;
 
 .heroku {
   background-color: $color-purple;
+}
+
+.mongodb {
+  background-color: $color-darkgreen;
+}
+
+.multer {
+  background-color: $color-grey;
+}
+
+.express {
+  background-color: $color-darkgrey;
+}
+
+.react {
+  background-color: $color-blue;
+}
+
+.redux {
+  background-color: $color-darkpurple;
+}
+
+.bootstrap {
+  background-color: $color-darkpurple;
+}
+
+.codepen {
+  background-color: $color-darkgrey;
+}
+
+.markdown {
+  background-color: $color-light;
+}
+
+.sass {
+  background-color: $color-purple;
+}
+
+.gatsby {
+  background-color: $color-purple;
+}
+
+.graphql {
+  background-color: $color-darkpurple;
+}
+
+.netlify {
+  background-color: $color-darkblue;
+}
+
+.google_map {
+  background-color: $color-darkblue;
 }
