@@ -49,7 +49,7 @@ export default function ProjectPage() {
       type: "frontend",
       name: "💬 random quote generator",
       tags: ["react","bootstrap","codepen"],
-      linkToDemo: "https://cdpn.io/kndwin/debug/GRgEEaB/wQMPozXQqYBk" ,
+      linkToDemo: "https://codepen.io/kndwin/full/GRgEEaB" ,
       linkToSourceCode: "https://codepen.io/kndwin/pen/GRgEEaB",
       shortDescription: "generates a random Simpsons quote"
     },
@@ -57,15 +57,15 @@ export default function ProjectPage() {
       type: "frontend",
       name: "📃 markdown previewer",
       tags: ["react","markdown","codepen"],
-      linkToDemo: "https://cdpn.io/kndwin/debug/bGNRKBB/yPMJjKwpdoEM" ,
-      linkToSourceCode: "https://codepen.io/kndwin/details/bGNRKBB",
+      linkToDemo: "https://cdpn.io/kndwin/full/bGNRKBB" ,
+      linkToSourceCode: "https://codepen.io/kndwin/pen/bGNRKBB",
       shortDescription: "converts raw text to html and previews it side by side"
     },
     {
       type: "frontend",
       name: "🥁 drumpad",
       tags: ["react","sass","codepen"],
-      linkToDemo: "https://cdpn.io/kndwin/debug/rNawrKa/LQkExyGQaOVA" ,
+      linkToDemo: "https://cdpn.io/kndwin/full/rNawrKa" ,
       linkToSourceCode: "https://codepen.io/kndwin/pen/rNawrKa",
       shortDescription: "buttons generate sounds like a pad"
     },
@@ -73,7 +73,7 @@ export default function ProjectPage() {
       type: "frontend",
       name: "⏲️ pomodoro timer",
       tags: ["react","sass","redux","codepen"],
-      linkToDemo: "https://cdpn.io/kndwin/debug/abOdKEz/LQMExyGQjPgk",
+      linkToDemo: "https://cdpn.io/kndwin/full/abOdKEz",
       linkToSourceCode: "https://codepen.io/kndwin/pen/ab0dKEz",
       shortDescription: "(unstylised) simple timer built to experiment react with redux"
     },
@@ -81,8 +81,8 @@ export default function ProjectPage() {
       type: "frontend",
       name: "🔢 calculator",
       tags: ["react","sass","codepen"],
-      linkToDemo: "https://cdpn.io/kndwin/debug/rNawrKa/LQkExyGQaOVA" ,
-      linkToSourceCode: "https://codepen.io/kndwin/pen/rNawrKa",
+      linkToDemo: "https://cdpn.io/kndwin/full/ZEGKoXV" ,
+      linkToSourceCode: "https://codepen.io/kndwin/pen/ZEGKoXV",
       shortDescription: "(unstylised) simple calculator app built to experiment with react components"
     },
     {

@@ -9,13 +9,44 @@ export default function HomePage({ data }) {
     <Layout>
       <Img className={styles.image}
         fluid={ data.file.childImageSharp.fluid } />
-      <h1>hey there!</h1>
+      <h1 className={styles.h1_color}>about me</h1>
       <p>
-        Nice to meet you! 
+        💬&nbsp;
+          <a className={styles.link}
+            href="https://www.bible.com/bible/72/JHN.3.30.HCSB"
+            target='_blank'>
+            john 3:30
+          </a>
         <br />
-        My name is Kevin
+        🎨&nbsp; 
+          <a className={styles.link}
+            href="https://github.com/morhetz/gruvbox"
+            target='_blank'>
+            gruvbox
+          </a> dark
         <br />
-        Aspiring full stack developer
+        ☕ cold drip
+        <br />
+        👨‍💻 aspiring full-stack dev
+        <br />
+        🎹 hobbyist producer (big big fan of&nbsp;
+          <a className={styles.link}
+            href="https://www.youtube.com/watch?v=-C-2AqRD8io"
+            target='_blank'>
+            porter
+          </a> and&nbsp;
+          <a className={styles.link}
+            href="https://www.youtube.com/watch?v=5ldbggv2zaQ"
+            target='_blank'>
+            kings k
+          </a>)!
+        <br />
+        💻 amatuer&nbsp;
+          <a className={styles.link}
+            href="https://archlinux.org"
+            target='_blank'>
+            arch
+          </a> user
         <br />
       </p>
     </Layout>

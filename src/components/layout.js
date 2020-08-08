@@ -7,6 +7,7 @@ import 'typeface-source-sans-pro'
 import styles from "./layout.module.scss"
 
 export default function Layout ({ children }) {
+
   return (
     <>
       <div className={styles.container}>
@@ -16,7 +17,7 @@ export default function Layout ({ children }) {
               kndwin
             </Link>
             <Link className={styles.link} to="/projects/">
-              project
+              projects
             </Link>
             <Link className={styles.link} to="/blog/">
               blog

@@ -1,5 +1,22 @@
+$color-blue: #83a598;
+$color-light: #fbf1c7;
+$color-green: #8ec07c;
+
 .image {
-  max-width: 600px;
-  max-height: 530px;
+  max-width: 400px;
+  max-height: 350px;
 }
 
+.link {
+  text-decoration: underline;
+  color: $color-light;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: $color-blue;
+}
+
+.h1_color {
+  color: $color-green;
+}
