@@ -1,0 +1,35 @@
+$color-dark: #282828;
+$color-light: #fbf1c7;
+$color-blue: #458588;
+$color-green: #98971a;
+$color-purple: #b16286;
+
+.link {
+  text-decoration: none;
+  color: $color-blue;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.tag {
+  padding: 2px 8px;
+  margin: 0px 4px ;
+  border-radius: 10px;
+  font-size: 12pt;
+  font-weight: 600;
+  color: $color-dark;
+}
+
+.tag:hover {
+  color: $color-light;
+}
+
+.node {
+  background-color: $color-green;
+}
+
+.heroku {
+  background-color: $color-purple;
+}
