@@ -1,0 +1,37 @@
+$color-darkblue: #458588;
+$color-darkgreen: #98971a;
+$color-darkgrey: #665c54;
+$color-darkorange: #d65d0e;
+
+.type {
+  display: table;
+  position: relative;
+}
+
+.type::after {
+  content: '';
+  background-color: $color-darkblue;
+  position: absolute;
+  top: 70%;
+  left: -2%;
+  width: 104%;
+  height: 10px;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.type_darkgrey::after {
+  background-color: $color-darkgrey;
+}
+
+.type_darkblue::after {
+  background-color: $color-darkblue;
+}
+
+.type_darkorange::after {
+  background-color: $color-darkorange;
+}
+
+.type_darkgreen::after {
+  background-color: $color-darkgreen;
+}

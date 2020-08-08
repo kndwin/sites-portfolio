@@ -4,7 +4,7 @@ import styles from "./project.module.scss"
 export default function ProjectLinks (props) {
 
   // convert string to css module class name
-  let tagInfo = (tag) => {
+  const tagInfo = (tag) => {
     var tagInfo = {
       cssModule: '',
       link: '',
@@ -113,6 +113,13 @@ export default function ProjectLinks (props) {
           cssModule: styles.google_map,
           link: 'https://developers.google.com/maps/documentation',
           logo: 'https://simpleicons.org/icons/googlemaps.svg'
+        }
+        break;
+      case 'd3':
+        tagInfo = {
+          cssModule: styles.d3,
+          link: 'https://d3js.org',
+          logo: 'https://simpleicons.org/icons/d3-dot-js.svg'
         }
         break;
       default: 

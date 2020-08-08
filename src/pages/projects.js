@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout.js"
 import ProjectLinks from "../components/project.js"
+import styles from "./projects.module.scss"
 
 export default function ProjectPage() {
-  let projects = [
+  const projects = [
     {
       type: "backend",
       name: "💪 exercise tracker",
@@ -54,7 +55,7 @@ export default function ProjectPage() {
     },
     {
       type: "frontend",
-      name: "markdown previewer",
+      name: "📃 markdown previewer",
       tags: ["react","markdown","codepen"],
       linkToDemo: "https://cdpn.io/kndwin/debug/bGNRKBB/yPMJjKwpdoEM" ,
       linkToSourceCode: "https://codepen.io/kndwin/details/bGNRKBB",
@@ -62,7 +63,7 @@ export default function ProjectPage() {
     },
     {
       type: "frontend",
-      name: "drumpad",
+      name: "🥁 drumpad",
       tags: ["react","sass","codepen"],
       linkToDemo: "https://cdpn.io/kndwin/debug/rNawrKa/LQkExyGQaOVA" ,
       linkToSourceCode: "https://codepen.io/kndwin/pen/rNawrKa",
@@ -70,7 +71,7 @@ export default function ProjectPage() {
     },
     {
       type: "frontend",
-      name: "pomodoro timer",
+      name: "⏲️ pomodoro timer",
       tags: ["react","sass","redux","codepen"],
       linkToDemo: "https://cdpn.io/kndwin/debug/abOdKEz/LQMExyGQjPgk",
       linkToSourceCode: "https://codepen.io/kndwin/pen/ab0dKEz",
@@ -78,15 +79,31 @@ export default function ProjectPage() {
     },
     {
       type: "frontend",
-      name: "calculator",
+      name: "🔢 calculator",
       tags: ["react","sass","codepen"],
       linkToDemo: "https://cdpn.io/kndwin/debug/rNawrKa/LQkExyGQaOVA" ,
       linkToSourceCode: "https://codepen.io/kndwin/pen/rNawrKa",
       shortDescription: "(unstylised) simple calculator app built to experiment with react components"
     },
     {
+      type: "data visualisation",
+      name: "📊 bar chart",
+      tags: ["react","d3","codepen"],
+      linkToDemo: "https://de-coco.com.au",
+      linkToSourceCode: "https://github.com/kndwin/site-decoco-react-netlify",
+      shortDescription: "simple bar chart made from REST API"
+    },
+    {
+      type: "data visualisation",
+      name: "⚫ scatter chart",
+      tags: ["react","d3","codepen"],
+      linkToDemo: "https://de-coco.com.au",
+      linkToSourceCode: "https://github.com/kndwin/site-decoco-react-netlify",
+      shortDescription: "simple scatter plot chart made from REST API"
+    },
+    {
       type: "other",
-      name: "portfolio",
+      name: "💻 portfolio",
       tags: ["gatsby","graphql","netlify"],
       linkToDemo: "https://kndwin.dev",
       linkToSourceCode: "https://github.com/kndwin/gatsby-portfolio",
@@ -94,7 +111,7 @@ export default function ProjectPage() {
     },
     {
       type: "other",
-      name: "de-coco",
+      name: "🛋️ de-coco",
       tags: ["react","google-map","netlify"],
       linkToDemo: "https://de-coco.com.au",
       linkToSourceCode: "https://github.com/kndwin/site-decoco-react-netlify",
@@ -102,10 +119,26 @@ export default function ProjectPage() {
     },
   ]
 
+  const underlineColor = (projectType) => {
+    let cssModule;
+    if (projectType==="backend") {
+      cssModule = styles.type_darkgreen; 
+    } else if (projectType === "frontend") {
+      cssModule = styles.type_darkblue; 
+    } else if (projectType === "data visualisation") {
+      cssModule = styles.type_darkorange; 
+    } else if (projectType === "other") {
+      cssModule = styles.type_darkgrey; 
+    }
+    return cssModule;
+  }
+
   let displayProject = (projectType) => {
     return (
       <div>
-        <h1>{projectType}</h1>
+        <h1 className={`${styles.type} ${underlineColor(projectType)}`}>
+          {projectType}
+        </h1>
         {projects
           .filter((project) => project.type === projectType)
           .map((project) => 
@@ -124,6 +157,7 @@ export default function ProjectPage() {
     <Layout>
       {displayProject("backend")}
       {displayProject("frontend")}
+      {displayProject("data visualisation")}
       {displayProject("other")}
     </Layout>
   )

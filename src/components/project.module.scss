@@ -8,6 +8,7 @@ $color-purple: #d3869b;
 $color-darkpurple: #b16286;
 $color-grey: #928374;
 $color-darkgrey: #665c54;
+$color-orange: #fe8019;
 
 .link {
   text-decoration: none;
@@ -112,4 +113,8 @@ $color-darkgrey: #665c54;
 
 .google_map {
   background-color: $color-darkblue;
+}
+
+.d3 {
+  background-color: $color-orange;
 }
