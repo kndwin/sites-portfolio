@@ -129,40 +129,41 @@ export default function ProjectLinks (props) {
   }
 
   return (
-    <div>
-      <p>
-        <span className={styles.name}>
-          {props.name} -&nbsp;
-        </span>
-        {props.shortDescription}
-        <br />
-        <span>
-          <a href={props.linkToDemo}
-            className={styles.link}>
-            demo
-          </a>
-          &nbsp; (
-          <a href={props.linkToSourceCode}
-            className={styles.link}>
-            source code
-          </a>
-          )
-        </span>
-        <br />
-        <div className={styles.tag_group}>
-          {props.tags.map((tag) => 
-              <a href={tagInfo(tag).link}
-                className={styles.tag_link}>
-                <span className={`${tagInfo(tag).cssModule} 
-                  ${styles.tag}`}>
-                  {tag}
-                  <img src={tagInfo(tag).logo} 
-                    className={styles.logo}/>
-                </span>
-              </a>
-          )}
-        </div>
-      </p>
-    </div>
+    <p>
+      <span className={styles.name}>
+        {props.name} -&nbsp;
+      </span>
+      {props.shortDescription}
+      <br />
+      <span>
+        <a href={props.linkToDemo}
+          className={styles.link}
+          target='_blank'>
+          demo
+        </a>
+        &nbsp; (
+        <a href={props.linkToSourceCode}
+          className={styles.link}
+          target='_blank'>
+          source code
+        </a>
+        )
+      </span>
+      <br />
+      <div className={styles.tag_group}>
+        {props.tags
+          .map((tag) => 
+            <a href={tagInfo(tag).link}
+              className={styles.tag_link}>
+              <span className={`${tagInfo(tag).cssModule} 
+                ${styles.tag}`}>
+                {tag}
+                <img src={tagInfo(tag).logo} 
+                  className={styles.logo}/>
+              </span>
+            </a>)
+        }
+      </div>
+    </p>
   )
 }

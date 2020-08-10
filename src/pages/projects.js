@@ -73,8 +73,8 @@ export default function ProjectPage() {
       type: "frontend",
       name: "⏲️ pomodoro timer",
       tags: ["react","sass","redux","codepen"],
-      linkToDemo: "https://cdpn.io/kndwin/full/abOdKEz",
-      linkToSourceCode: "https://codepen.io/kndwin/pen/ab0dKEz",
+      linkToDemo: "https://codepen.io/kndwin/full/abOdKEz",
+      linkToSourceCode: "https://codepen.io/kndwin/pen/abOdKEz",
       shortDescription: "(unstylised) simple timer built to experiment react with redux"
     },
     {
@@ -89,25 +89,25 @@ export default function ProjectPage() {
       type: "data visualisation",
       name: "📊 bar chart",
       tags: ["react","d3","codepen"],
-      linkToDemo: "https://de-coco.com.au",
-      linkToSourceCode: "https://github.com/kndwin/site-decoco-react-netlify",
-      shortDescription: "simple bar chart made from REST API"
+      linkToDemo: "https://codepen.io/kndwin/full/WNQjLwP",
+      linkToSourceCode: "https://codepen.io/kndwin/pen/WNQjLwP",
+      shortDescription: "simple bar chart with data source from endpoint"
     },
     {
       type: "data visualisation",
       name: "⚫ scatter chart",
       tags: ["react","d3","codepen"],
-      linkToDemo: "https://de-coco.com.au",
-      linkToSourceCode: "https://github.com/kndwin/site-decoco-react-netlify",
-      shortDescription: "simple scatter plot chart made from REST API"
+      linkToDemo: "https://codepen.io/kndwin/full/MWwqpLB",
+      linkToSourceCode: "https://codepen.io/kndwin/pen/MWwqpLB",
+      shortDescription: "simple scatter with data source from endpoint"
     },
     {
       type: "other",
       name: "💻 portfolio",
       tags: ["gatsby","graphql","netlify"],
       linkToDemo: "https://kndwin.dev",
-      linkToSourceCode: "https://github.com/kndwin/gatsby-portfolio",
-      shortDescription: "a gatsby generate site to showcase my projects"
+      linkToSourceCode: "https://github.com/kndwin/sites-portfolio",
+      shortDescription: "simple site with a blog"
     },
     {
       type: "other",
@@ -121,14 +121,21 @@ export default function ProjectPage() {
 
   const underlineColor = (projectType) => {
     let cssModule;
-    if (projectType==="backend") {
-      cssModule = styles.type_darkgreen; 
-    } else if (projectType === "frontend") {
-      cssModule = styles.type_darkblue; 
-    } else if (projectType === "data visualisation") {
-      cssModule = styles.type_darkorange; 
-    } else if (projectType === "other") {
+    switch (projectType) {
+      case 'backend':
+        cssModule = styles.type_darkgreen; 
+        break;
+      case 'frontend':
+        cssModule = styles.type_darkblue; 
+        break;
+      case 'data visualisation':
+        cssModule = styles.type_darkorange; 
+        break;
+      case 'other':
       cssModule = styles.type_darkgrey; 
+        break;
+      default:
+        break;
     }
     return cssModule;
   }
@@ -136,21 +143,21 @@ export default function ProjectPage() {
   let displayProject = (projectType) => {
     return (
       <div>
-        <h1 className={`${styles.type} ${underlineColor(projectType)}`}>
+        <h1 className={`${styles.type} 
+          ${underlineColor(projectType)}`}>
           {projectType}
         </h1>
         {projects
           .filter((project) => project.type === projectType)
           .map((project) => 
-            <ProjectLinks 
-              name={project.name} 
+            <ProjectLinks name={project.name} 
               tags={project.tags}
               linkToSourceCode={project.linkToSourceCode}
               linkToDemo={project.linkToDemo}
               shortDescription={project.shortDescription}/>)
         }
       </div>
-      )
+    )
   }
 
   return  (
