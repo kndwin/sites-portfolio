@@ -104,10 +104,18 @@ export default function ProjectPage() {
     {
       type: "other",
       name: "💻 portfolio",
-      tags: ["gatsby","graphql","netlify"],
+      tags: ["gatsby","graphql","markdown","netlify"],
       linkToDemo: "https://kndwin.dev",
       linkToSourceCode: "https://github.com/kndwin/sites-portfolio",
-      shortDescription: "simple site with a blog"
+      shortDescription: "simple site with a blog",
+    },
+    {
+      type: "other",
+      name: "🛋️ holroyd community aid",
+      tags: ["gatsby","graphql","markdown","netlify"],
+      linkToDemo: "https://dev-hca.netlify.com",
+      linkToSourceCode: "https://github.com/kndwin/sites-hca",
+      shortDescription: "simple site for a community store",
     },
     {
       type: "other",
@@ -142,7 +150,7 @@ export default function ProjectPage() {
 
   let displayProject = (projectType) => {
     return (
-      <div>
+      <div >
         <h1 className={`${styles.type} 
           ${underlineColor(projectType)}`}>
           {projectType}

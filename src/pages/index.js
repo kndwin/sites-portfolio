@@ -14,6 +14,7 @@ export default function HomePage({ data }) {
         💬&nbsp;
           <a className={styles.link}
             href="https://www.bible.com/bible/72/JHN.3.30.HCSB"
+            rel='noreferrer'
             target='_blank'>
             john 3:30
           </a>
@@ -21,6 +22,7 @@ export default function HomePage({ data }) {
         🎨&nbsp; 
           <a className={styles.link}
             href="https://github.com/morhetz/gruvbox"
+            rel='noreferrer'
             target='_blank'>
             gruvbox
           </a> dark
@@ -32,11 +34,13 @@ export default function HomePage({ data }) {
         🎹 hobbyist producer (big big fan of&nbsp;
           <a className={styles.link}
             href="https://www.youtube.com/watch?v=-C-2AqRD8io"
+            rel='noreferrer'
             target='_blank'>
             porter
           </a> and&nbsp;
           <a className={styles.link}
             href="https://www.youtube.com/watch?v=5ldbggv2zaQ"
+            rel='noreferrer'
             target='_blank'>
             kings k
           </a>)!
@@ -44,6 +48,7 @@ export default function HomePage({ data }) {
         💻 amatuer&nbsp;
           <a className={styles.link}
             href="https://archlinux.org"
+            rel='noreferrer'
             target='_blank'>
             arch
           </a> user

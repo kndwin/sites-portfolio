@@ -3,6 +3,21 @@ import styles from "./project.module.scss"
 
 export default function ProjectLinks (props) {
 
+  let tagInfoConstant = [
+    {
+      tag: 'node',
+      cssModule: styles.node,
+      link: 'https://nodejs.org',
+      logo: 'https://simpleicons.org/icons/node-dot-js.svg'
+    },
+    {
+      tag: 'heroku',
+      cssModule: styles.heroku,
+      link: 'https://heroku.com',
+      logo: 'https://simpleicons.org/icons/heroku.svg'
+    },
+  ]
+
   // convert string to css module class name
   const tagInfo = (tag) => {
     var tagInfo = {
@@ -138,12 +153,14 @@ export default function ProjectLinks (props) {
       <span>
         <a href={props.linkToDemo}
           className={styles.link}
+          rel='noreferrer'
           target='_blank'>
           demo
         </a>
         &nbsp; (
         <a href={props.linkToSourceCode}
           className={styles.link}
+          rel='noreferrer'
           target='_blank'>
           source code
         </a>
