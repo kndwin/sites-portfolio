@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-template-blog-post-js","path":"/blogs/blog-2/","result":{"data":{"markdownRemark":{"html":"<h1>Hello!</h1>\n<p>I'm a simple text</p>\n<ul>\n<li>I'm a dot point</li>\n<li>I'm a dot point</li>\n<li>I'm a number</li>\n<li>I'm a number</li>\n</ul>","frontmatter":{"title":"second blog"}}},"pageContext":{"slug":"/blogs/blog-2/"}}}

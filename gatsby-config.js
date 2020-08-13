@@ -11,11 +11,12 @@ module.exports = {
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/static`
+        path: `${__dirname}/src`
       }
     }
   ],
